@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #00ff00;
+    background-color: #000000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #000000;
+    border-bottom: 2px solid #00ff00;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #00ff00;
+    background-color: #000000;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #00ff00;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #000000;
+    border-top: 1px solid #00ff00;
+    border-bottom: 1px solid #00ff00;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #00ff00;
+}
+
+.about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #000000;
+    color: #00ff00;
+    border-top: 1px solid #00ff00;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skill {
+    background: #000000;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 150px;
+    color: #00ff00;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+    background: #00ff00;
+    color: #000000;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #000000;
+    border-top: 1px solid #00ff00;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project {
+    background: #000000;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 250px;
+    color: #00ff00;
+    font-size: 0.9rem;
+    text-align: left;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.project:hover {
+    background: #00ff00;
+    color: #000000;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #000000;
+    color: #00ff00;
+    border-top: 1px solid #00ff00;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00ff00;
+    background: #000000;
+    color: #00ff00;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    background: #001100;
+    border-color: #ffffff;
+}
+
+#contact-form button {
+    background: #000000;
+    color: #00ff00;
+    padding: 0.8rem 2rem;
+    border: 1px solid #00ff00;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #00ff00;
+    color: #000000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000000;
+    color: #00ff00;
+    font-size: 0.9rem;
+    border-top: 1px solid #00ff00;
+}
+
+/* LinkedIn Section */
+.linkedin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0; /* Adds more spacing from other sections */
+    padding: 2rem;
+    background-color: #000000;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.linkedin-card {
+    display: flex;
+    flex-direction: column; /* Aligns text and button in a vertical layout */
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #000000;
+    border: 1px solid #00ff00;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #00ff00;
+}
+
+.linkedin-card p {
+    font-size: 1rem;
+    margin: 0;
+    color: #00ff00;
+}
+
+.linkedin-card a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.linkedin-card a:hover {
+    background-color: #000000;
+    color: #00ff00;
+    border-color: #ffffff;
+}
+
+.linkedin-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    background-color: #001100; /* Subtle change on hover */
+}
